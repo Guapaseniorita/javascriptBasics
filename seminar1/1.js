@@ -13,7 +13,7 @@
 Уточнение: пользователь всегда вводит корректное число.
 */
 
-const userInput = prompt("Введите, пожалуйста, температуру в градусах Цельсия");
+const userInput = +prompt("Введите, пожалуйста, температуру в градусах Цельсия");
 const temperaturaC = parseFloat(userInput.replace(',', '.'));
 const temperaturaF = (9 / 5) * temperaturaC + 32;
 alert(`Цельсий: ${temperaturaC}, Фаренгейт: ${temperaturaF}`);
